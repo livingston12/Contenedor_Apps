@@ -1,0 +1,52 @@
+
+.C-bg-purple{
+    background-color: #4527a0 !important;
+    color: white;
+}
+
+.full-width{
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0px !important ;
+    min-height: 100% !important;
+}
+
+.containter-fluid{
+    width: 100%;
+    margin-right: 15px !important;
+    margin-left:  15px !important;
+    min-width: 98% !important;
+    min-height: 98% !important;
+}
+
+#contenedor-apps{
+    min-height: 400px !important;
+}
+
+#icon-edit:hover {
+    background-color: #FFA000;
+    color: white;
+    border-radius: 5px;
+}
+
+#icon-cancel:hover{
+    background-color: #E53935;
+    color: white;
+    border-radius: 5px;  
+}
+.NotificationFixed
+{
+ position: fixed;
+ left: 30%;
+ right: 70%;
+ top: 0px;  
+ min-width: 400px; 
+}
+
+@media (max-width: 800px) {
+    .NotificationFixed {
+        min-width: 300px; 
+    }
+  }
