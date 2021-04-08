@@ -2,6 +2,7 @@
 Esto es un contenedor de aplicaciones.
 
 Este contenedor esta creado en **vue Js** con una **api Rest**.
+URL **api Rest**: https://github.com/livingston12/contenedor-app-API
 
 # Coneccion
 * Para conectar esta aplicacion **Front End** tienes que ir a el js llamado **scripts_general**  
@@ -10,3 +11,7 @@ y en la variable llamada **RooturlApi** ingresas la url de donde tienes alojada 
 * Para conectar esta aplicacion **Back End** tienes que ir al **web.config** y cambiar el valor
 del **appSettings** llamado **urlApp** y ingresas la url de donde tienes alojada tu app **Front
 end** .
+
+
+
+
