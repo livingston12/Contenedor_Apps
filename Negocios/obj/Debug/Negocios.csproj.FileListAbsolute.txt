@@ -1,0 +1,9 @@
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Negocios.dll
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Data.dll
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Entidade.dll
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Data.pdb
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\bin\Debug\Entidade.pdb
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\obj\Debug\Negocios.dll
+C:\Users\Livin\Documents\Visual Studio 2015\Projects\Sistema_Escolar\Negocios\obj\Debug\Negocios.pdb

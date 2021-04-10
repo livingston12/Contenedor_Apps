@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6836D00-7406-43D0-8B4C-3E4B3D9C06DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\CXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\CXP.Designer.cs">
+      <DependentUpon>CXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Estudiantes.Designer.cs">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Eventos.Designer.cs">
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Excursiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Excursiones.Designer.cs">
+      <DependentUpon>Excursiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Materias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Materias.Designer.cs">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Pago_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Pago_Compras.Designer.cs">
+      <DependentUpon>Pago_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Poductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Poductos.Designer.cs">
+      <DependentUpon>Poductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Profesores.Designer.cs">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Suplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Suplidores.Designer.cs">
+      <DependentUpon>Suplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Estudiantes.Designer.cs">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Eventos.Designer.cs">
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Excursiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Excursiones.Designer.cs">
+      <DependentUpon>Excursiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Iusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Iusuario.Designer.cs">
+      <DependentUpon>Iusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Materia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Materia.Designer.cs">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\materias_profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\materias_profesores.Designer.cs">
+      <DependentUpon>materias_profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\NOTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\NOTAS.Designer.cs">
+      <DependentUpon>NOTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\productos_suplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\productos_suplidores.Designer.cs">
+      <DependentUpon>productos_suplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Profesores.Designer.cs">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar\Suplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar\Suplidores.Designer.cs">
+      <DependentUpon>Suplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_almacen.Designer.cs">
+      <DependentUpon>menu_almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_Estudiante.Designer.cs">
+      <DependentUpon>menu_Estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Maestro.Designer.cs">
+      <DependentUpon>Menu_Maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistema_escolarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistema_escolarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistema_escolarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistema_escolarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistema_escolarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistema_escolarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistema_escolarDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistema_escolarDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Consultas\Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\CXP.resx">
+      <DependentUpon>CXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Estudiantes.resx">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Eventos.resx">
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Excursiones.resx">
+      <DependentUpon>Excursiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Materias.resx">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Pago_Compras.resx">
+      <DependentUpon>Pago_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Poductos.resx">
+      <DependentUpon>Poductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Profesores.resx">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Suplidores.resx">
+      <DependentUpon>Suplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Estudiantes.resx">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Eventos.resx">
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Excursiones.resx">
+      <DependentUpon>Excursiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Iusuario.resx">
+      <DependentUpon>Iusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Materia.resx">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\materias_profesores.resx">
+      <DependentUpon>materias_profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\NOTAS.resx">
+      <DependentUpon>NOTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\productos_suplidores.resx">
+      <DependentUpon>productos_suplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Profesores.resx">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar\Suplidores.resx">
+      <DependentUpon>Suplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_almacen.resx">
+      <DependentUpon>menu_almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_Estudiante.resx">
+      <DependentUpon>menu_Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Maestro.resx">
+      <DependentUpon>Menu_Maestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sistema_escolarDataSet.xsc">
+      <DependentUpon>sistema_escolarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistema_escolarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistema_escolarDataSet.xss">
+      <DependentUpon>sistema_escolarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet1.xsc">
+      <DependentUpon>sistema_escolarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistema_escolarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistema_escolarDataSet1.xss">
+      <DependentUpon>sistema_escolarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet2.xsc">
+      <DependentUpon>sistema_escolarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistema_escolarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistema_escolarDataSet2.xss">
+      <DependentUpon>sistema_escolarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet31.xsc">
+      <DependentUpon>sistema_escolarDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="sistema_escolarDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistema_escolarDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistema_escolarDataSet31.xss">
+      <DependentUpon>sistema_escolarDataSet31.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1088_example1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-The_Woodlands_College_Park_Front_Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidade\Entidade.csproj">
+      <Project>{516e7fb7-0f42-43ac-96f4-9048f9147d18}</Project>
+      <Name>Entidade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{fa6e21ac-63d8-4e98-8832-66edab3bde91}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_usuarios.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_6538520-3D-Blue-Button---Add-a-contact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuestro-azul-de-los-clientes-ajusta-el-fondo-44152303.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_find_sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39646570-icono-salir-boton-cuadrado-azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escuela-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-cart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facturacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoDeSistemaEscolar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse3color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
